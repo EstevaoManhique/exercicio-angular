@@ -1,0 +1,9 @@
+<div class="row justify-content-between m-5">
+    <div *ngFor="let pais of paises" class="card mb-3" style="width: 16rem;">
+        <img class="card-img-top" src={{pais.flags.svg}} alt="Card image cap">
+        <div class="card-body">
+          Nome comum: {{pais.name.common}} <br>
+          {{pais.region}}
+        </div>
+    </div>
+</div>
